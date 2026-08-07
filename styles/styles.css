@@ -7,22 +7,49 @@
  }
  /* body */
  body{
-    font-family:'poppins' sans-serif;
+    font-family:'Poppins', sans-serif;
     background-color: #F8FAFC;
     color: #1F2937;
  }
  /* header */
 header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: #1E3A8A;
     color: white;
     padding: 20px;
  }
- /* NAVEGACION*/
-nav ul{
-    list-style: none;
+ .logo{
+    width: 150px;
+ }
+ .menu{
     display: flex;
+    list-style: none;
     gap: 20px;
+ }
+ .menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+ }
+ /* HERO*/
+ .hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+ }
+ .hero-texto{
+    flex: 1;
+
+ }
+.hero-imagen{
+    flex: 1;
 }
+ /* NAVEGACION*/
+
 nav a{
     color: white;
     text-decoration: none;
@@ -34,11 +61,13 @@ main{
 }
 /* secciones */
 section{ 
+    padding: 20px;
+    margin: 20px;
     margin-bottom: 40px;
 }
 /* titulos */
 h1{
-    font-size: 3 rem;
+    font-size: 3rem;
     font-weight: 700;
     color: #1E3A8A;
 }
@@ -56,6 +85,69 @@ img{
     max-width: 100%;
     border-radius: 10px;
 
+}
+/* sabores */
+.sabores{
+    
+    padding: 20px;
+}
+.titulo-sabores{
+    text-align: center;
+}
+.titulo-sabores img{
+    display: block;
+    width: 500px;
+    max-width: 100%;
+    margin: 20px auto;
+
+}
+
+.lista-sabores{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.sabor{
+    flex: 1;
+    max-width: 250px;
+    padding: 20px;
+    background: #F8FACF;
+    border-radius: 10px;
+    text-align: center;
+}
+.sabor img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+/* titulo promociones*/
+.titulo-promociones{
+    text-align: center;
+}
+.titulo-promociones img{
+    display: block;
+    width: 500px;
+    max-width: 100%;
+    margin: 20px auto;
+}
+.titulo-nosotros{
+     text-align: center;
+}
+.titulo-nosotros img{
+    display: block;
+    width: 500px;
+    max-width: 100%;
+    margin: 20px auto;
+}
+.titulo-contacto{
+    text-align: center
+}
+.titulo-contacto img{
+     display: block;
+    width: 500px;
+    max-width: 100%;
+    margin: 20px auto;
 }
 /* footer */
 footer{
